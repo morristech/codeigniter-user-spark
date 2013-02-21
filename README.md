@@ -1,11 +1,14 @@
+*NB* This is a repackaged version of codeigniter-user for use with the Sparks Package Management System (see [get-sparks]).
+[get-sparks]: [http://getsparks.org/]
+
 # Codeigniter User Library V. 1.3
 This library is a *very simple* yet *powerful* user auth library for CodeIgniter, made for easy instalation and strong security. The library uses [Bcrypt](http://codahale.com/how-to-safely-store-a-password/) for hashing passwords to the database.
 ## Quick Start
 This is a quick guide to help you run your user system. This tutorial implies that you have basic notion of codeigniter mechanism like libraries and controllers.
 
 * Import the _database schema.sql_ to your database.
-* Copy the libraries to your _application/libraries_ folder.
-* If you want to see the demo login page, marge all the files (including the views and controllers).
+* <del>Copy the libraries to your _application/libraries_ folder.</del>
+* <del>If you want to see the demo login page, <del>merge all the files (including the views and controllers).</del> copy the contents of the demo folder into your application folder.
 * Change your encryption key on your application _config.php_ file and also set up your database connection config properly if you haven't yet.
 * Set up your database. This can be done on _database.php_, under config folder.
 * **If you installed the demo**, head to _index.php/login_ and try out your new user auth system.
@@ -15,7 +18,7 @@ Here is listed some of the most common actions when managin the user auth flow o
 ### Logging a user in
 You may put this in the "login" method.
 
-	if($this->user->login($login, $password)){
+    if($this->user->login($login, $password)){
 		// user is now logged in, you may redirect it to the private page
 		redirect('private_page');
 	} else {

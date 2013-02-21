@@ -1,0 +1,6 @@
+name: codeigniter-user
+version: 1.4.0
+
+# This is the version of CodeIgniter this spark is compatible up to. It should
+#  be in x.x.x format
+compatibility: 2.1.3
